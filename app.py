@@ -1,6 +1,6 @@
 from flask import Flask, render_template, redirect, url_for, session
 import datetime
-import pytz  # This is a library to work with time zones
+import pytz  
 
 app = Flask(__name__)
 app.secret_key = '2001'
@@ -18,7 +18,7 @@ def get_indian_time():
 
 @app.route('/login')
 def login():
-    # Simulate Gmail authentication
+    
     user_info = {
         'name': 'Varun L P',
         'email': 'vkpleela@gmail.com',
