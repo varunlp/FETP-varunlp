@@ -1,10 +1,10 @@
-<!-- home.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- ... (head section) ... -->
+  
     <style>
-        /* ... (styles) ... */
+     
     </style>
 </head>
 <body>
@@ -12,7 +12,7 @@
 
 
 
-    <p>Hello {{ user_info.name }} <a href="{{ url_for('logout') }}">Sign out</a></p>
+    <p>Hello {{ user_info.name }} <a href="{{ url_for('logout') }}">[Sign out]</a></p>
     <p>You are signed in with the email {{ user_info.email }}</p>
     <p>Current Indian Time: {{ current_time }}</p>
 
@@ -22,12 +22,12 @@
         <button type="submit">Display</button>
     </form>
 
-    <!-- Display the generated design -->
+  
     {% if design_output %}
         <pre>{{ design_output }}</pre>
     {% endif %}
     
-    <!-- ... (additional content) ... -->
+   
 </body>
 </html>
 

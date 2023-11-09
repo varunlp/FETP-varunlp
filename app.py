@@ -26,7 +26,7 @@ def home():
 
 @app.route('/login')
 def login():
-    # Simulate Gmail authentication
+   
     user_info = {
         'name': 'Varun L P',
         'email': 'vkpleela@gmail.com',
