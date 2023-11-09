@@ -2,7 +2,7 @@ from flask import Flask, render_template, redirect, url_for, session
 import datetime
 import pytz  
 
-app = Flask(__name__)
+app = Flask(__name__) #rem
 app.secret_key = '2001'
 
 @app.route('/')
