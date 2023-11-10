@@ -1,34 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
-    <style>
-     
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
 </head>
 <body>
-    <h1><img src="{{ url_for('static', filename=user_info['profile_picture']) }}" alt="Profile Picture" width="200" height="200"></h1>
+    <h1>Welcome, {{ user_name }}!</h1>
+    <p>Email: {{ user_email }}</p>
+    <p>Current Time in India: {{ current_time }}</p>
 
-
-
-    <p>Hello {{ user_info.name }} <a href="{{ url_for('logout') }}">[Sign out]</a></p>
-    <p>You are signed in with the email {{ user_info.email }}</p>
-    <p>Current Indian Time: {{ current_time }}</p>
-
-    <form method="post" action="{{ url_for('home') }}">
-        <label for="num_lines">Number of Lines:</label>
-        <input type="number" id="num_lines" name="num_lines" min="1" max="100" required>
-        <button type="submit">Display</button>
-    </form>
-
-  
-    {% if design_output %}
-        <pre>{{ design_output }}</pre>
-    {% endif %}
-    
-   
+    <a href="{{ url_for('logout') }}">Logout</a>
 </body>
 </html>
-
 
